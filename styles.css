@@ -1,20 +1,22 @@
+/* Estilos iniciales de la imagen */
 #imagen {
-    filter: grayscale(100%);
-  }
-  
-  #imagen.neutral {
-    filter: grayscale(0%);
-  }
-  
-  #imagen.feliz {
     filter: sepia(100%);
   }
   
-  #imagen.triste {
-    filter: brightness(50%);
+  /* Selector de atributo para aplicar los estilos según el valor de data-estado */
+  #imagen[data-estado="neutral"] {
+    filter: grayscale(50%);
   }
   
-  #imagen.enojado {
-    filter: hue-rotate(180deg);
+  #imagen[data-estado="feliz"] {
+    filter: grayscale(0%);
+  }
+  
+  #imagen[data-estado="triste"] {
+    filter: brightness(60%) sepia(70%);
+  }
+  
+  #imagen[data-estado="enojado"] {
+    filter: hue-rotate(320deg) brightness(60%);
   }
   
