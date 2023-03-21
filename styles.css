@@ -1,0 +1,20 @@
+#imagen {
+    filter: grayscale(100%);
+  }
+  
+  #imagen.neutral {
+    filter: grayscale(0%);
+  }
+  
+  #imagen.feliz {
+    filter: sepia(100%);
+  }
+  
+  #imagen.triste {
+    filter: brightness(50%);
+  }
+  
+  #imagen.enojado {
+    filter: hue-rotate(180deg);
+  }
+  
