@@ -19,8 +19,63 @@
   #imagen[data-estado="enojado"] {
     filter: hue-rotate(320deg) brightness(60%);
   }
-  
-  #frase{
-    color: white;
-    text-shadow: 2px 2px 10px black;
+
+  /* Clases para las diferentes animaciones de la frase */
+.fade-in {
+    animation: fadeIn 2s ease-in-out forwards;
   }
+  
+  .slide-in {
+    animation: slideIn 2s ease-in-out forwards;
+  }
+  
+  /* Animaciones de entrada */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  /* Animaciones de salida */
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Estilos para la frase */
+  #frase {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  

@@ -23,7 +23,7 @@ function reproducirMusica() {
     }
   }
 
-function mostrarFrases() {
+  function mostrarFrases() {
     const estado = selectEstado.value;
     switch (estado) {
       case 'neutral':
@@ -41,5 +41,12 @@ function mostrarFrases() {
       default:
         frase.textContent = '';
     }
-  }
-  
+    
+    // Animación de entrada
+    frase.style.animation = 'fadeIn 0.5s ease-in-out forwards';
+    
+    // Animación de salida después de 2 segundos
+    setTimeout(() => {
+        frase.style.animation = 'fadeOut 0.5s ease-in-out forwards';
+    }, 2000);
+}
