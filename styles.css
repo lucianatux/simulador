@@ -1,6 +1,6 @@
 /* Estilos iniciales de la imagen */
 #imagen {
-    filter: sepia(100%);
+    filter: grayscale(100%);
   }
   
   /* Selector de atributo para aplicar los estilos según el valor de data-estado */
@@ -20,4 +20,7 @@
     filter: hue-rotate(320deg) brightness(60%);
   }
   
-  
+  #frase{
+    color: white;
+    text-shadow: 2px 2px 10px black;
+  }
