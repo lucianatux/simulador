@@ -16,10 +16,8 @@ function cambiarEstado() {
 function reproducirMusica() {
     if (audio.paused) {
       audio.play();
-      botonMusica.textContent = 'Pausar música';
     } else {
       audio.pause();
-      botonMusica.textContent = 'Reproducir música';
     }
   }
 
