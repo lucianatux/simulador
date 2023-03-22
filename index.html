@@ -28,21 +28,40 @@
             src="./assets/room.jpg"
             data-estado="neutral"
           />
+          <p>Vista</p>
           <div id="frase" class="position-absolute top-50 start-50 translate-middle text-white fs-2"></div>
         </div>
         <div class="d-flex justify-content-center p-3">
-          <select id="selectEstado" class="btn btn-secondary m-1">
-            <option value="neutral">Neutral</option>
-            <option value="feliz">Feliz</option>
-            <option value="triste">Triste</option>
-            <option value="enojado">Enojado</option>
-          </select>
-          <br />
-          <button id="botonMusica" class="btn btn-warning m-1">sonido</button>
-          <br />
+          <div class="m-2">
+            <p>Otros Sentidos</p>
+            <button id="botonMusica" class="btn btn-dark m-1">oído</button>
+            <audio id="audio" src="./assets/pajaros-a-la-manana.mp3"></audio>
+            <button id="botonGusto" class="btn btn-dark m-1">gusto</button>
+            <button id="botonOlfato" class="btn btn-dark m-1">olfato</button>
+            <button id="botonTacto" class="btn btn-dark m-1">tacto</button>
+            <button id="botonCenestesia" class="btn btn-dark m-1">cenestesia</button>
+            <button id="botonKinestesia" class="btn btn-dark m-1">kinestesia</button>
+          </div>
           <!--<button id="botonFrases" class="btn btn-primary m-1">Activar frases</button>-->
-      
-          <audio id="audio" src="./assets/pajaros-a-la-manana.mp3"></audio>
+          <div class="m-2">
+            <p>Climas</p>
+            <select id="selectEstado" class="btn btn-warning">
+              <option value="neutral">Neutral</option>
+              <option value="feliz">Feliz</option>
+              <option value="triste">Triste</option>
+              <option value="enojado">Enojado</option>
+            </select>
+          </div>
+          <div class="m-2">
+            <p>Niveles de Conciencia</p>
+            <select id="selectNivel" class="btn btn-info">
+              <option value="sueño">Sueño</option>
+              <option value="semisueño">Semisueño</option>
+              <option value="vigilia">Vigilia</option>
+              <option value="conc-de-si">Conciencia de si</option>
+              <option value="conc-objetiva">Conciencia Objetiva</option>
+            </select>
+          </div>
         </div>
       </div>
    
