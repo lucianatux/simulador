@@ -22,50 +22,48 @@
   <body>
     <div class="container-fluid">
         <h1 class="text-center">Simulador</h1>
-        <div class="position-relative">
-          <img
-            id="imagen"
-            src="./assets/room.jpg"
-            data-estado="neutral"
-            data-nivel="sueño"
-          />
-          <p>Vista</p>
-          <div id="frase" class="position-absolute top-50 start-50 translate-middle text-white fs-2"></div>
-          <div id="frase2" class="position-absolute top-30 start-30 translate-middle text-white fs-2"></div>
-          <div id="frase3" class="position-absolute top-80 start-80 translate-middle text-white fs-2"></div>
-        </div>
-        <div class="d-flex justify-content-center p-3">
-          <div class="m-2">
-            <p>Otros Sentidos</p>
-            <button id="botonMusica" class="btn btn-secondary m-1">oído</button>
-            <audio id="audio" src="./assets/pajaros-a-la-manana.mp3"></audio>
-            <button id="botonGusto" class="btn btn-secondary m-1">gusto</button>
-            <button id="botonOlfato" class="btn btn-secondary m-1">olfato</button>
-            <button id="botonTacto" class="btn btn-secondary m-1">tacto</button>
-            <button id="botonCenestesia" class="btn btn-secondary m-1">cenestesia</button>
-            <button id="botonKinestesia" class="btn btn-secondary m-1">kinestesia</button>
+          <div class="position-relative">
+            <img
+              id="imagen"
+              src="./assets/room.jpg"
+              data-estado="neutral"
+              data-nivel="sueño"
+            />
+            <p id="sentidos">Vista &#128070 | Oído: Canto de pájaros | Gusto: El sabor de mi lengua | 
+              Olfato: Aroma a madera y lavanda | Tacto: Mi pijama suave | Cenestesia: 
+              Pequeño dolor de espalda | Kinestesia: Posición erguida
+            </p>
+            <button id="botonMusica" class="btn btn-light m-1">&#127925</button>
+            <div id="frase" class="position-absolute top-50 start-50 translate-middle text-white fs-2"></div>
+            <div id="frase2" class="position-absolute top-30 start-30 translate-middle text-white fs-2"></div>
+            <div id="frase3" class="position-absolute top-80 start-80 translate-middle text-white fs-2"></div>
           </div>
-          <!--<button id="botonFrases" class="btn btn-primary m-1">Activar frases</button>-->
-          <div class="m-2">
-            <p>Climas</p>
-            <select id="selectEstado" class="btn btn-warning">
-              <option value="neutral">Neutral</option>
-              <option value="feliz">Feliz</option>
-              <option value="triste">Triste</option>
-              <option value="enojado">Enojado</option>
-            </select>
+          <div class="d-flex justify-content-center p-3 mt-5">
+            <div class="m-2">
+              <audio id="audio" src="./assets/pajaros-a-la-manana.mp3"></audio>
+            </div>
+            <!--<button id="botonFrases" class="btn btn-primary m-1">Activar frases</button>-->
+            <div class="m-2">
+              <p>Climas</p>
+              <select id="selectEstado" class="btn btn-warning">
+                <option value="neutral">Neutral</option>
+                <option value="feliz">Feliz</option>
+                <option value="triste">Triste</option>
+                <option value="enojado">Enojado</option>
+              </select>
+            </div>
+            <div class="m-2">
+              <p>Niveles de Conciencia</p>
+              <select id="selectNivel" class="btn btn-info">
+                <option value="sueño">Sueño</option>
+                <option value="semisueño">Semisueño</option>
+                <option value="vigilia">Vigilia</option>
+                <option value="conc-de-si">Conciencia de si</option>
+                <option value="conc-objetiva">Conciencia Objetiva</option>
+              </select>
+            </div>
           </div>
-          <div class="m-2">
-            <p>Niveles de Conciencia</p>
-            <select id="selectNivel" class="btn btn-info">
-              <option value="sueño">Sueño</option>
-              <option value="semisueño">Semisueño</option>
-              <option value="vigilia">Vigilia</option>
-              <option value="conc-de-si">Conciencia de si</option>
-              <option value="conc-objetiva">Conciencia Objetiva</option>
-            </select>
-          </div>
-        </div>
+        
       </div>
    
     <script src="./scripts.js"></script>
