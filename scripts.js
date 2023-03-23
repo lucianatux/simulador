@@ -62,15 +62,15 @@ function reproducirMusica() {
     }
     
     // Animación de entrada
-    frase.style.animation = 'fadeIn 0.5s ease-in-out forwards';
-    frase2.style.animation = 'fadeIn 0.8s ease-in-out forwards';
+    frase.style.animation = 'fadeIn 0.8s ease-in-out forwards';
+    frase2.style.animation = 'fadeIn 0.5s ease-in-out forwards';
     frase3.style.animation = 'fadeIn 0.2s ease-in-out forwards';
 
     
-    // Animación de salida después de 2 segundos
+    // Animación de salida después de 3 segundos
     setTimeout(() => {
-        frase.style.animation = 'fadeOut 0.2s ease-in-out forwards';
-        frase2.style.animation = 'fadeOut 0.5s ease-in-out forwards';
-        frase3.style.animation = 'fadeOut 0.8s ease-in-out forwards';
+        frase.style.animation = 'fadeOut 1.2s ease-in-out forwards';
+        frase2.style.animation = 'fadeOut 0.9s ease-in-out forwards';
+        frase3.style.animation = 'fadeOut 0.6s ease-in-out forwards';
     }, 3000);
 }
