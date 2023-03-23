@@ -5,6 +5,8 @@ const botonMusica = document.getElementById('botonMusica');
 //const botonFrases = document.getElementById('botonFrases');
 const audio = document.getElementById('audio');
 const frase = document.getElementById('frase');
+const frase2 = document.getElementById('frase2');
+const frase3 = document.getElementById('frase3');
 
 selectEstado.addEventListener('change', cambiarEstado);
 selectNivel.addEventListener('change', cambiarNivel);
@@ -37,15 +39,23 @@ function reproducirMusica() {
     switch (estado) {
       case 'neutral':
         frase.textContent = 'No tengo mucho que decir';
+        frase2.textContent = 'Todo está bien';
+        frase3.textContent = 'Me siento tranquilo';
         break;
       case 'feliz':
-        frase.textContent = '¡Qué bien me siento!';
+        frase.textContent = 'Me siento muy feliz hoy';
+        frase2.textContent = 'Qué día tan hermoso!';
+        frase3.textContent = 'Todo está de maravilla';
         break;
       case 'triste':
-        frase.textContent = 'No me siento muy bien';
+        frase.textContent = 'Me siento abrumado';
+        frase2.textContent = 'No tengo ganas de hacer nada';
+        frase3.textContent = 'Qué triste estoy...';
         break;
       case 'enojado':
         frase.textContent = '¡Esto es inaceptable!';
+        frase2.textContent = 'Que rabia!';
+        frase3.textContent = '#@#&&@#%'
         break;
       default:
         frase.textContent = '';
@@ -53,9 +63,14 @@ function reproducirMusica() {
     
     // Animación de entrada
     frase.style.animation = 'fadeIn 0.5s ease-in-out forwards';
+    frase2.style.animation = 'fadeIn 0.5s ease-in-out forwards';
+    frase3.style.animation = 'fadeIn 0.5s ease-in-out forwards';
+
     
     // Animación de salida después de 2 segundos
     setTimeout(() => {
         frase.style.animation = 'fadeOut 0.5s ease-in-out forwards';
+        frase2.style.animation = 'fadeOut 0.5s ease-in-out forwards';
+        frase3.style.animation = 'fadeOut 0.5s ease-in-out forwards';
     }, 2000);
 }
