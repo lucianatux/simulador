@@ -77,16 +77,16 @@ function cambioPercepcion() {
   let rutaImagen = '';
   switch (nivel) {
     case 'sueño':
-      rutaImagen = '';
+      rutaImagen = './assets/dream1.jpeg';
       break;
     case 'semisueño':
-      rutaImagen = '';
+      rutaImagen = './assets/semidream.jpeg';
       break;
     case 'vigilia':
       rutaImagen = './assets/room.jpg';
       break;
     case 'conc-de-si':
-      rutaImagen = '';
+      rutaImagen = './assets/concdesi.jpeg';
       break;
     case 'conc-objetiva':
       rutaImagen = './assets/codigo4.gif';
