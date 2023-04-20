@@ -8,6 +8,7 @@ const frase2 = document.getElementById('frase2');
 const frase3 = document.getElementById('frase3');
 const sentidos = document.getElementById('sentidos');
 
+mostrarPensamientos();
 selectEstado.addEventListener('change', cambiarEstado);
 selectNivel.addEventListener('change', cambiarNivel);
 botonMusica.addEventListener('click', reproducirMusica);
@@ -17,8 +18,14 @@ function cambiarEstado() {
     imagen.setAttribute('data-estado', estado);
     console.log(estado);
     mostrarFrases();
-    mostrarSentidos();
   }
+  
+function cambiarNivel() {
+  const nivel = selectNivel.value;
+  imagen.setAttribute('data-nivel', nivel);
+  console.log(nivel);
+  cambioPercepcion();
+}
 
 
 function reproducirMusica() {
@@ -101,17 +108,10 @@ function cambioPercepcion() {
   }
   console.log("Ruta de imagen seleccionada:", rutaImagen);
   imagen.src = rutaImagen;
+  sentidos.textContent = "Vista: \u{1F446}	- Oído: Canto de pájaros - Gusto: Sabor de mi lengua - Olfato: Aroma a madera y lavanda - Tacto: Suavidad de mi pijama de seda - Cenestesia: Sensación saludable y con energía - Kinestesia: Posición erguida, levemente encorvada";
 }
 
-function cambiarNivel() {
-  const nivel = selectNivel.value;
-  imagen.setAttribute('data-nivel', nivel);
-  console.log(nivel);
-  cambioPercepcion();
-  mostrarSentidos();
-}
-
-function mostrarSentidos() {
+function mostrarPensamientos() {
   const estado = selectEstado.value;
   const nivel = selectNivel.value;
   switch (estado + "-" + nivel) {
