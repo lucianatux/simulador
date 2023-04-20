@@ -67,11 +67,11 @@ function cambioPercepcion() {
       break;
     default:
       rutaImagen = "./assets/room.jpg";
+      sentidos.textContent =
+      "Vista: \u{1F446}	- Oído: Canto de pájaros - Gusto: Sabor de mi lengua - Olfato: Aroma a madera y lavanda - Tacto: Suavidad de mi pijama de seda - Cenestesia: Sensación saludable y con energía - Kinestesia: Posición erguida, levemente encorvada";  
   }
   console.log("Ruta de imagen seleccionada:", rutaImagen);
   imagen.src = rutaImagen;
-  sentidos.textContent =
-    "Vista: \u{1F446}	- Oído: Canto de pájaros - Gusto: Sabor de mi lengua - Olfato: Aroma a madera y lavanda - Tacto: Suavidad de mi pijama de seda - Cenestesia: Sensación saludable y con energía - Kinestesia: Posición erguida, levemente encorvada";
 }
 
 function mostrarPensamientos() {

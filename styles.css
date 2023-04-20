@@ -121,6 +121,20 @@
       object-position: 60% 0;
     }
   }
+
+  #sentidos {
+    width: 100%; /* Establece el ancho del elemento al 100% por defecto */
+    max-width: none; /* Desactiva el ancho máximo del elemento */
+    float: none; /* Hace que el elemento flote hacia la derecha */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  @media screen and (min-width: 768px) { /* Establece una consulta de medios para pantallas grandes */
+    #sentidos {
+      width: 45%; /* Establece el ancho del elemento al 20% en pantallas grandes */
+      float: right; /* Desactiva el flotador en pantallas grandes */
+    }
+  }
   
   
   
