@@ -78,18 +78,23 @@ function cambioPercepcion() {
   switch (nivel) {
     case 'sueño':
       rutaImagen = './assets/dream1.jpeg';
+      sentidos.textContent = "Vista: \u{1F446}	- Oído: Canto de la mona lisa - Gusto: Sabor ahumado - Olfato: Aromas reconfortantes - Tacto: Sensaciones suaves, difusas - Cenestesia: Presión en la mandíbula - Kinestesia: Posición acostada";
       break;
     case 'semisueño':
       rutaImagen = './assets/semidream.jpeg';
+      sentidos.textContent = "Vista: \u{1F446}	- Oído: Canto chillón y agudo - Gusto: Sabor de mi lengua - Olfato: Aroma a madera y algo perfumado - Tacto: Sensación suave y sedosa - Cenestesia: Sensación de haber descansado - Kinestesia: Posición erguida tambaleante";
       break;
     case 'vigilia':
       rutaImagen = './assets/room.jpg';
+      sentidos.textContent = "Vista: \u{1F446}	- Oído: Canto de pájaros - Gusto: Sabor de mi lengua - Olfato: Aroma a madera y lavanda - Tacto: Suavidad de mi pijama de seda - Cenestesia: Sensación saludable y con energía - Kinestesia: Posición erguida, levemente encorvada";
       break;
     case 'conc-de-si':
       rutaImagen = './assets/concdesi.jpeg';
+      sentidos.textContent = "Vista: \u{1F446}	- Oído: Canto de pájaros y mi respiración - Gusto: Sabor de mi lengua - Olfato: Aroma a madera y lavanda - Tacto: Suavidad de mi pijama de seda - Cenestesia: Sensación saludable y con energía - Kinestesia: Posición erguida";
       break;
     case 'conc-objetiva':
       rutaImagen = './assets/codigo4.gif';
+      sentidos.textContent = "Vista: \u{1F446}	- Oído: Canto de pájaros y mi respiración - Gusto: Sabor de mi lengua - Olfato: Aroma a madera y lavanda - Tacto: Suavidad de mi pijama de seda - Cenestesia: Sensación saludable y con energía - Kinestesia: Posición erguida";
       break;
     default:
       rutaImagen = './assets/room.jpg';
