@@ -61,7 +61,7 @@ function cambioPercepcion() {
         "Vista: \u{1F446}	- Oído: Canto de pájaros y mi respiración - Gusto: Sabor de mi lengua - Olfato: Aroma a madera y lavanda - Tacto: Suavidad de mi pijama de seda - Cenestesia: Sensación saludable y con energía - Kinestesia: Posición erguida";
       break;
     case "conc-objetiva":
-      rutaImagen = "./assets/codigo4.gif";
+      rutaImagen = "./assets/codigo6.gif";
       sentidos.textContent =
         "Vista: \u{1F446}	- Oído: Canto de pájaros y mi respiración - Gusto: Sabor de mi lengua - Olfato: Aroma a madera y lavanda - Tacto: Suavidad de mi pijama de seda - Cenestesia: Sensación saludable y con energía - Kinestesia: Posición erguida";
       break;
@@ -80,15 +80,15 @@ function mostrarPensamientos() {
   switch (estado + "-" + nivel) {
     case "neutral-sueño":
       console.log("neutralsueño");
-      frase.textContent = "o que decir";
-      frase2.textContent = "bien";
-      frase3.textContent = "anquilo";
+      frase.textContent = "Me voy a fumar una pipa en el sillón";
+      frase2.textContent = "Que es eso?";
+      frase3.textContent = "Que bien que canta la mona lisa";
       break;
     case "neutral-semisueño":
       console.log("neutralsemisueño");
-      frase.textContent = "No ten";
-      frase2.textContent = "Todo e";
-      frase3.textContent = "Me sie";
+      frase.textContent = "Ahmmmm (bostezo)";
+      frase2.textContent = "Que hora será?";
+      frase3.textContent = "Que sueño extraño que tuve...";
       break;
     case "neutral-vigilia":
       console.log("neutralvigilia");
@@ -98,24 +98,27 @@ function mostrarPensamientos() {
       break;
     case "neutral-conc-de-si":
       console.log("neutralconcdesi");
-      frase.textContent = " que decir";
-      frase2.textContent = "está bien";
-      frase3.textContent = "siento tranquilo";
+      frase.textContent = "Buen día mundo!";
+      frase2.textContent = "";
+      frase3.textContent = "";
       break;
     case "neutral-conc-objetiva":
       console.log("neutralobjetiva");
+      frase.textContent = "";
+      frase2.textContent = "";
+      frase3.textContent = "";
       break;
     case "feliz-sueño":
       console.log("felizsueño");
-      frase.textContent = "feliz hoy";
-      frase2.textContent = " hermoso!";
-      frase3.textContent = "maravilla";
+      frase.textContent = "Cuánto oro que encontré!!!";
+      frase2.textContent = "Hola Lisa!";
+      frase3.textContent = "Cantas de maravilla!";
       break;
     case "feliz-semisueño":
       console.log("felizsemisueño");
-      frase.textContent = "Me siento mu";
-      frase2.textContent = "Qué día!";
-      frase3.textContent = "Todo está";
+      frase.textContent = "Que gran sueño que tuve!";
+      frase2.textContent = "Descansé muy bien";
+      frase3.textContent = "A comenzar el día con todo!";
       break;
     case "feliz-vigilia":
       console.log("felizvigilia");
@@ -125,24 +128,27 @@ function mostrarPensamientos() {
       break;
     case "feliz-conc-de-si":
       console.log("feliz-conc-de-si");
-      frase.textContent = " siento muy feliz hoy";
-      frase2.textContent = " día tan hermoso!";
-      frase3.textContent = " está de maravilla";
+      frase.textContent = "Agradezco este maravilloso día";
+      frase2.textContent = "";
+      frase3.textContent = "";
       break;
     case "feliz-conc-objetiva":
-      console.log("felizconc-objetica");
+      console.log("felizconc-objetiva");
+      frase.textContent = "";
+      frase2.textContent = "";
+      frase3.textContent = "";
       break;
     case "triste-sueño":
       console.log("tristesueño");
-      frase.textContent = "abrumado";
-      frase2.textContent = "hacer nada";
-      frase3.textContent = "...";
+      frase.textContent = "Donde estará...";
+      frase2.textContent = "...lo que busco?";
+      frase3.textContent = "...no entiendo";
       break;
     case "triste-semisueño":
       console.log("tristesemisueño");
-      frase.textContent = "Me sient";
-      frase2.textContent = "No tengo ganas";
-      frase3.textContent = "Qué trist";
+      frase.textContent = "Otra vez lo mismo...";
+      frase2.textContent = "Qué alboroto!";
+      frase3.textContent = "No quiero levantarme";
       break;
     case "triste-vigilia":
       console.log("tristevigilia");
@@ -152,24 +158,27 @@ function mostrarPensamientos() {
       break;
     case "triste-conc-de-si":
       console.log("triste-conc-de-si");
-      frase.textContent = "siento abrumado";
-      frase2.textContent = "tengo ganas de hacer nada";
-      frase3.textContent = "triste estoy...";
+      frase.textContent = "";
+      frase2.textContent = "Necesito cambiar mi ánimo";
+      frase3.textContent = "";
       break;
     case "triste-conc-objetiva":
       console.log("tristeconc-objetiva");
+      frase.textContent = "";
+      frase2.textContent = "";
+      frase3.textContent = "";
       break;
     case "enojado-sueño":
       console.log("enojadosueño");
-      frase.textContent = "¡eptable!";
-      frase2.textContent = "rabia!";
+      frase.textContent = "Alguien me persigue";
+      frase2.textContent = "Tu quien #%@&# eres?";
       frase3.textContent = "#@#&&@#%";
       break;
     case "enojado-semisueño":
       console.log("enojadosemisueño");
-      frase.textContent = "¡Esto es ";
-      frase2.textContent = "Que rabia!";
-      frase3.textContent = "#@#&&@#%";
+      frase.textContent = "#@#&&@#%";
+      frase2.textContent = "Ya cállense!";
+      frase3.textContent = "Maldito sueño!";
       break;
     case "enojado-vigilia":
       console.log("enojadovigilia");
@@ -179,12 +188,15 @@ function mostrarPensamientos() {
       break;
     case "enojado-conc-de-si":
       console.log("enojado-conc-de-si");
-      frase.textContent = "¡ es inaceptable!";
-      frase2.textContent = " rabia!";
-      frase3.textContent = "#@#&&@#%";
+      frase.textContent = "Necesito relajarme";
+      frase2.textContent = "";
+      frase3.textContent = "";
       break;
     case "enojado-conc-objetiva":
       console.log("enojadoconc-objetiva");
+      frase.textContent = "";
+      frase2.textContent = "";
+      frase3.textContent = "";
       break;
     default:
       frase.textContent = "";
@@ -199,5 +211,5 @@ function mostrarPensamientos() {
     frase.style.animation = "fadeOut 1.2s ease-in-out forwards";
     frase2.style.animation = "fadeOut 0.9s ease-in-out forwards";
     frase3.style.animation = "fadeOut 0.6s ease-in-out forwards";
-  }, 5000);
+  }, 6000);
 }
