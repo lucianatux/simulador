@@ -20,11 +20,6 @@ function cambiarEstado() {
     mostrarFrases();
   }
 
-function cambiarNivel() {
-    const nivel = selectNivel.value;
-    imagen.setAttribute('data-nivel', nivel);
-    console.log(nivel);
-  }
 
 function reproducirMusica() {
     if (audio.paused) {
@@ -60,7 +55,7 @@ function reproducirMusica() {
       default:
         frase.textContent = '';
     }
-    
+
     // Animación de entrada
     frase.style.animation = 'fadeIn 0.8s ease-in-out forwards';
     frase2.style.animation = 'fadeIn 0.5s ease-in-out forwards';
@@ -73,4 +68,39 @@ function reproducirMusica() {
         frase2.style.animation = 'fadeOut 0.9s ease-in-out forwards';
         frase3.style.animation = 'fadeOut 0.6s ease-in-out forwards';
     }, 3000);
+}
+
+
+
+function cambioPercepcion() {
+  const nivel = selectNivel.value;
+  let rutaImagen = '';
+  switch (nivel) {
+    case 'sueño':
+      rutaImagen = '';
+      break;
+    case 'semisueño':
+      rutaImagen = '';
+      break;
+    case 'vigilia':
+      rutaImagen = './assets/room.jpg';
+      break;
+    case 'conc-de-si':
+      rutaImagen = '';
+      break;
+    case 'conc-objetiva':
+      rutaImagen = './assets/codigo4.gif';
+      break;
+    default:
+      rutaImagen = './assets/room.jpg';
+  }
+  console.log("Ruta de imagen seleccionada:", rutaImagen);
+  imagen.src = rutaImagen;
+}
+
+function cambiarNivel() {
+  const nivel = selectNivel.value;
+  imagen.setAttribute('data-nivel', nivel);
+  console.log(nivel);
+  cambioPercepcion();
 }
