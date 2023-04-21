@@ -61,7 +61,7 @@ function cambioPercepcion() {
         "Vista: \u{1F446}	- Oído: Canto de pájaros y mi respiración - Gusto: Sabor de mi lengua - Olfato: Aroma a madera y lavanda - Tacto: Suavidad de mi pijama de seda - Cenestesia: Sensación saludable y con energía - Kinestesia: Posición erguida";
       break;
     case "conc-objetiva":
-      rutaImagen = "./assets/codigo6.gif";
+      rutaImagen = "./assets/matrix04.gif";
       sentidos.textContent =
         "Vista: \u{1F446}	- Oído: Canto de pájaros y mi respiración - Gusto: Sabor de mi lengua - Olfato: Aroma a madera y lavanda - Tacto: Suavidad de mi pijama de seda - Cenestesia: Sensación saludable y con energía - Kinestesia: Posición erguida";
       break;
